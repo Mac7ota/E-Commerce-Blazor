@@ -1,0 +1,191 @@
+﻿@page "/CarrinhoCompra"
+@inject IJSRuntime Js;
+
+@if (CarrinhoCompraItens == null && MensagemErro == null)
+{
+    <ExibirSpinner />
+}
+else if (MensagemErro != null)
+{
+    <ExibirErro MensagemErro="@MensagemErro"></ExibirErro>
+}
+else
+{
+    <h3 class="mb-5">Carrinho</h3>
+    @if (CarrinhoCompraItens.Count() > 0)
+    {
+        <div class="row mb-5">
+            <div class="col-md-9">
+                @foreach (var item in CarrinhoCompraItens)
+                {
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <img src="@item.ProdutoImagemURL" width="250" class="img-thumbnail">
+                        </div>
+                        <div class="col-md-9">
+                            <h5>@item.ProdutoNome</h5>
+                            <div class="mb-4">
+                                @item.ProdutoDescricao
+                            </div>
+                            <span>Preço: <b>@item.Preco.ToString("C")</b>
+                                <input @oninput="()=>AtualizaQuantidade_Input(item.Id)" type="number" @bind="@item.Quantidade" />
+                                <button data-itemId="@item.Id"  class="btn btn-info btn-sm atualizaquantidade" @onclick="(()=> AtualizaQuantidadeCarrinhoItem_Click(item.Id, item.Quantidade))">
+                               <i class="oi oi-check"></i>
+                            </button>
+                            <br>
+                            <button @onclick = "(()=> DeletaCarrinhoItem_Click(item.Id))" class="btn btn-danger sm">
+                                <span class="oi oi-trash"></span>
+                             </button>
+                            </span>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-md-3">
+                <h5>Carrinho - Resumo</h5>
+                <div class="mt-2">
+                    <div>Total - (@QuantidadeTotal items)&nbsp;<br /><b>@PrecoTotal</b></div>
+                    <a href="#" class="btn btn-success">
+                        <span class="oi oi-credit-card"></span>&nbsp; Fechar Pedido
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+       <div>
+               <h3><b>Seu carrinho esta vazio</b></h3>
+       </div>
+    }
+}
+
+@code {
+    [Inject]
+    public ICarrinhoCompraService? CarrinhoCompraService { get; set; }
+
+    public List<CarrinhoItemDto>? CarrinhoCompraItens { get; set; }
+
+    public string? MensagemErro { get; set; }
+
+    protected string? PrecoTotal { get; set; }
+    protected int QuantidadeTotal { get; set; }
+
+    [Inject]
+    public IGerenciaCarrinhoItensLocalStorageService?
+                 GerenciaCarrinhoItensLocalStorageService   { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            CarrinhoCompraItens = await GerenciaCarrinhoItensLocalStorageService.GetCollection();
+
+            //CalculaResumoCarrinhoTotal();
+            CarrinhoChanged();
+        }
+        catch (Exception ex)
+        {
+            MensagemErro = ex.Message;
+        }
+    }
+
+    protected async Task DeletaCarrinhoItem_Click(int id)
+    {
+        //excluir o item do banco de dados
+        var carrinhoItemDto = await CarrinhoCompraService.DeletaItem(id);
+
+        //remoção do item da coleção de objetos da memoria no cliente
+        await RemoveCarrinhoItem(id);
+
+        //CalculaResumoCarrinhoTotal();
+        CarrinhoChanged();
+    }
+
+    private CarrinhoItemDto GetCarrinhoItem(int id)
+    {
+        return CarrinhoCompraItens.FirstOrDefault(i => i.Id == id);
+    }
+
+    private async Task RemoveCarrinhoItem(int id)
+    {
+        var carrinhoItemDto = GetCarrinhoItem(id);
+        CarrinhoCompraItens.Remove(carrinhoItemDto);
+
+        await GerenciaCarrinhoItensLocalStorageService.SaveCollection(CarrinhoCompraItens);
+    }
+
+    protected async Task AtualizaQuantidadeCarrinhoItem_Click(int id, int quantidade)
+    {
+        try
+        {
+            if (quantidade > 0)
+            {
+                var atualizaItemDto = new CarrinhoItemAtualizaQuantidadeDto
+                {
+                    CarrinhoItemId = id,
+                    Quantidade = quantidade
+                };
+
+                var retornaItemAtualizadoDto = await CarrinhoCompraService
+                                                     .AtualizaQuantidade(atualizaItemDto);
+
+                AtualizaPrecoTotalItem(retornaItemAtualizadoDto);
+                //CalculaResumoCarrinhoTotal();
+                CarrinhoChanged();
+                await Js.InvokeVoidAsync("TornaBotaoAtualizarQuantidadeVisivel", id, false);
+            }
+            else
+            {
+                var item = CarrinhoCompraItens.FirstOrDefault(i => i.Id == id);
+                if (item is not null)
+                {
+                    item.Quantidade = 1;
+                    item.PrecoTotal = item.Preco;
+                }
+            }
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+    }
+    private void SetPrecoTotal()
+    {
+        PrecoTotal = CarrinhoCompraItens.Sum(p => p.PrecoTotal).ToString("C");
+    }
+    private void SetQuantidadeTotal()
+    {
+        QuantidadeTotal = CarrinhoCompraItens.Sum(p => p.Quantidade);
+    }
+
+    private void CalculaResumoCarrinhoTotal()
+    {
+        SetPrecoTotal();
+        SetQuantidadeTotal();
+    }
+
+    private async Task AtualizaPrecoTotalItem(CarrinhoItemDto carrinhoItemDto)
+    {
+        var item = GetCarrinhoItem(carrinhoItemDto.Id);
+
+        if (item != null)
+        {
+            item.PrecoTotal = carrinhoItemDto.Preco * carrinhoItemDto.Quantidade;
+        }
+
+        await GerenciaCarrinhoItensLocalStorageService.SaveCollection(CarrinhoCompraItens);
+    }
+
+    protected async Task AtualizaQuantidade_Input(int id)
+    {
+        await Js.InvokeVoidAsync("TornaBotaoAtualizarQuantidadeVisivel", id, true);
+    }
+
+    private void CarrinhoChanged()
+    {
+        CalculaResumoCarrinhoTotal();
+        CarrinhoCompraService.RaiseEventOnCarrinhoCompraChanged(QuantidadeTotal);
+    }
+}

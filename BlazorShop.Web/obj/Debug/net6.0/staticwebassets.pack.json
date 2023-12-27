@@ -1,0 +1,201 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\obj\\Debug\\net6.0\\compressed\\yarcdw9rvc.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\BlazorShop.Web.styles.css",
+      "PackagePath": "staticwebassets\\BlazorShop.Web.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Beleza\\Beleza1.png",
+      "PackagePath": "staticwebassets\\Imagens\\Beleza\\Beleza1.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Beleza\\Beleza2.png",
+      "PackagePath": "staticwebassets\\Imagens\\Beleza\\Beleza2.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Beleza\\Beleza3.png",
+      "PackagePath": "staticwebassets\\Imagens\\Beleza\\Beleza3.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Beleza\\Beleza4.png",
+      "PackagePath": "staticwebassets\\Imagens\\Beleza\\Beleza4.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Beleza\\Beleza5.png",
+      "PackagePath": "staticwebassets\\Imagens\\Beleza\\Beleza5.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Calcados\\calcado1.png",
+      "PackagePath": "staticwebassets\\Imagens\\Calcados\\calcado1.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Calcados\\calcado2.png",
+      "PackagePath": "staticwebassets\\Imagens\\Calcados\\calcado2.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Calcados\\calcado3.png",
+      "PackagePath": "staticwebassets\\Imagens\\Calcados\\calcado3.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Calcados\\calcado4.png",
+      "PackagePath": "staticwebassets\\Imagens\\Calcados\\calcado4.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Calcados\\calcado5.png",
+      "PackagePath": "staticwebassets\\Imagens\\Calcados\\calcado5.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Calcados\\calcado6.png",
+      "PackagePath": "staticwebassets\\Imagens\\Calcados\\calcado6.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Eletronicos\\eletronico1.png",
+      "PackagePath": "staticwebassets\\Imagens\\Eletronicos\\eletronico1.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Eletronicos\\eletronico2.png",
+      "PackagePath": "staticwebassets\\Imagens\\Eletronicos\\eletronico2.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Eletronicos\\eletronico3.png",
+      "PackagePath": "staticwebassets\\Imagens\\Eletronicos\\eletronico3.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Eletronicos\\eletronico4.png",
+      "PackagePath": "staticwebassets\\Imagens\\Eletronicos\\eletronico4.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Eletronicos\\eletronico5.png",
+      "PackagePath": "staticwebassets\\Imagens\\Eletronicos\\eletronico5.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Eletronicos\\tecnologia6.png",
+      "PackagePath": "staticwebassets\\Imagens\\Eletronicos\\tecnologia6.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Moveis\\moveis1.png",
+      "PackagePath": "staticwebassets\\Imagens\\Moveis\\moveis1.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Moveis\\moveis2.png",
+      "PackagePath": "staticwebassets\\Imagens\\Moveis\\moveis2.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Moveis\\moveis3.png",
+      "PackagePath": "staticwebassets\\Imagens\\Moveis\\moveis3.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Moveis\\moveis4.png",
+      "PackagePath": "staticwebassets\\Imagens\\Moveis\\moveis4.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Moveis\\moveis6.png",
+      "PackagePath": "staticwebassets\\Imagens\\Moveis\\moveis6.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Imagens\\Moveis\\moveis7.png",
+      "PackagePath": "staticwebassets\\Imagens\\Moveis\\moveis7.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\Spinner-2.gif",
+      "PackagePath": "staticwebassets\\Spinner-2.gif"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\blzshopping3.jpg",
+      "PackagePath": "staticwebassets\\blzshopping3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\js\\CarrinhoCompraFunctions.js",
+      "PackagePath": "staticwebassets\\js\\CarrinhoCompraFunctions.js"
+    },
+    {
+      "Id": "C:\\Users\\BMI 02\\Downloads\\BlazorShop-master\\BlazorShop-master\\BlazorShop.Web\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.BlazorShop.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.BlazorShop.Web.props",
+      "PackagePath": "build\\BlazorShop.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorShop.Web.props",
+      "PackagePath": "buildMultiTargeting\\BlazorShop.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.BlazorShop.Web.props",
+      "PackagePath": "buildTransitive\\BlazorShop.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

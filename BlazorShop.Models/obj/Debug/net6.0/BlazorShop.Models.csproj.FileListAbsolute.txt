@@ -1,0 +1,11 @@
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\bin\Debug\net6.0\BlazorShop.Models.deps.json
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\bin\Debug\net6.0\BlazorShop.Models.dll
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\bin\Debug\net6.0\BlazorShop.Models.pdb
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\BlazorShop.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\BlazorShop.Models.AssemblyInfoInputs.cache
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\BlazorShop.Models.AssemblyInfo.cs
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\BlazorShop.Models.csproj.CoreCompileInputs.cache
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\BlazorShop.Models.dll
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\refint\BlazorShop.Models.dll
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\BlazorShop.Models.pdb
+C:\Users\BMI 02\Downloads\BlazorShop-master\BlazorShop-master\BlazorShop.Models\obj\Debug\net6.0\ref\BlazorShop.Models.dll

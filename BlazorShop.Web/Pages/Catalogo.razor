@@ -1,0 +1,73 @@
+﻿@page "/produtos"
+@inject IProdutoService produtoService
+
+@if (Produtos == null)
+{
+    <ExibirSpinner />
+}
+else
+{
+    <h3 class="mb-5">Produtos</h3>
+    @if (Produtos.Count() > 0)
+    {
+        var produtosPorCategoria = from produto in Produtos
+                                   group produto by produto.CategoriaId into prodPorCatGrupo
+                                   orderby prodPorCatGrupo.Key
+                                   select prodPorCatGrupo;
+
+        @foreach (var prodGrupo in produtosPorCategoria)
+        {
+            <h4>@prodGrupo.FirstOrDefault(pg=> pg.CategoriaId == prodGrupo.Key).CategoriaNome</h4>
+            <div class="row mt-3">
+                <ExibirProdutos Produtos="@prodGrupo"></ExibirProdutos>
+            </div>
+            <hr class="mb-2"/>
+        }        
+    }
+}
+
+@code {
+    public IEnumerable<ProdutoDto>? Produtos { get; set; }
+
+    [Inject]
+    public IGerenciaProdutosLocalStorageService?
+                 GerenciaProdutosLocalStorageService { get; set; }
+
+    [Inject]
+    public IGerenciaCarrinhoItensLocalStorageService?
+                 GerenciaCarrinhoItensLocalStorageService { get; set; }
+
+    [Inject]
+    public ICarrinhoCompraService? CarrinhoCompraService { get; set; }
+
+    public string? MensagemErro { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await LimpaLocalStorage();
+
+            Produtos = await GerenciaProdutosLocalStorageService.GetCollection();
+
+            var carrinhoCompraItens = await GerenciaCarrinhoItensLocalStorageService
+                                           .GetCollection();
+
+            var totalQuantidade = carrinhoCompraItens.Sum(i => i.Quantidade);
+
+            CarrinhoCompraService.RaiseEventOnCarrinhoCompraChanged(totalQuantidade);
+
+        }
+        catch (Exception ex)
+        {
+            MensagemErro = ex.Message;
+        }
+    }
+
+    private async Task LimpaLocalStorage()
+    {
+        await GerenciaProdutosLocalStorageService.RemoveCollection();
+        await GerenciaCarrinhoItensLocalStorageService.RemoveCollection();
+    }
+}
